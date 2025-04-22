@@ -1,0 +1,452 @@
+/* div{
+    border: 1px solid black;
+} */
+body {
+    margin: 0%;
+}
+
+@font-face {
+    font-family: 'akira';
+    src: url('fonts/akiraexpanded.otf');
+}
+
+@font-face {
+    font-family: 'coolvetica';
+    src: url('fonts/coolvetica condensed rg.otf');
+}
+
+@font-face {
+    font-family: 'creato';
+    src: url('fonts/CreatoDisplay-Regular.otf');
+}
+
+a {
+    text-decoration: none;
+}
+
+.ferrari_logo {
+    width: 100px;
+    margin-right: -50px;
+}
+
+.navbar {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+    font-size: larger;
+    font-family: 'akira', Arial, sans-serif;
+    position: relative;
+}
+
+.link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: .5s ease-in-out;
+
+}
+
+.link:hover::after {
+    width: 100%;
+}
+
+.header_ul {
+    position: absolute;
+    left: 100px;
+    top: 30px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.coverpic_f1 {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+
+
+}
+
+.cover-img {
+    width: 100%;
+    height: auto;
+    z-index: -1;
+
+}
+
+.image-link {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+
+
+.model_text {
+    text-decoration: none;
+    color: black;
+    padding-top: 20px;
+    margin: 0px;
+    margin-left: 38px;
+    font-size: 30px;
+    font-family: 'akira', Arial, sans-serif;
+    position: relative;
+}
+
+.models_small {
+
+    display: flex;
+
+    height: 100px;
+    justify-content: space-evenly;
+    margin-left: 30px;
+
+}
+
+.models_small img {
+    width: 200px;
+
+    margin: 10px;
+
+
+}
+
+#roma {
+
+    /* margin-left: -90px;
+  
+    text-align: center;
+    font-family: 'akira', Arial, sans-serif; */
+    /* background-color: aqua; */
+    margin-top: -30px;
+}
+
+#purosangue {
+    /* margin-top: -15px;
+    padding-top: -30px; */
+    margin-top: -13px;
+}
+
+#sf90stradale {
+    /* margin-right: -50px;
+margin-left: -60px; */
+    /* background-color: brown; */
+}
+
+#portofino {
+    margin-top: 13px;
+}
+
+#sf90spider:hover {
+    transition: .3s ease-in-out;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+
+}
+
+#sf90stradale:hover {
+    transition: .3s ease-in-out;
+
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+
+
+}
+
+#roma:hover {
+    transition: .3s ease-in;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+
+}
+
+#purosangue:hover {
+    transition: .3s ease-in;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+
+}
+
+#portofino:hover {
+    transition: .3s ease-in;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+
+}
+
+.newlaunch_text {
+    margin-bottom: 30px;
+    text-align: center;
+    margin-top: 80px;
+    font-family: 'akira', Arial, sans-serif;
+    font-size: 30px;
+}
+
+.covervid_f1 {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+
+
+}
+
+.cover-vid {
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+/* .image-link {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+.image-text{
+	position: relative;
+	top: 100px;
+} */
+stradale_newlaunch_pic{
+	position: relative;
+	text-align: center;
+	color: white;
+}
+/* .stradale_newlaunch img{
+	display: block;
+	width: 100%;
+	height: auto;
+} */
+
+.stradale_newlaunch_text{ 
+	position: absolute;
+	top: 50%; 
+	left: 50%; 
+	transform: translate(-50%, -50%); 
+	background-color: #000000; 
+	color: #fff; 
+	padding: 10px 20px; 
+	font-size: 20px; 
+	text-align: center;
+
+}
+.discoverengg_text {
+    text-align: center;
+    font-family: akira;
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.discoverengg_container {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.engg_text {
+
+    text-align: center;
+    font-family: 'coolvetica';
+    margin-top: 30px;
+    font-size: 30px;
+    display: inline-block;
+    width: 470px;
+    height: 400px;
+    color: white;
+    align-content: flex-end;
+    transition: transform 0.3s ease-in-out;
+    /* Add transition for smooth effect */
+    overflow: hidden;
+    /* Hide overflow to prevent text from extending outside */
+    position: relative;
+    /* Ensure proper stacking context for child elements */
+}
+
+.engg_text:hover {
+    transform: scale(1.1);
+    /* Scale up the text on hover */
+}
+
+.engg_text>* {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Center the content vertically and horizontally */
+    z-index: 1;
+    /* Ensure content is above background */
+}
+
+#engine {
+    background-image: url('images/enginebay.png');
+}
+
+#chassis {
+    background-image: url('images/chassis.png');
+}
+
+#interior {
+    background-image: url('images/interior.png  ');
+}
+
+.footer {
+
+
+    left: 0;
+    bottom: 0;
+    margin-left: -10px;
+    width: auto;
+    background-color: rgb(30, 29, 29);
+    border: 1px black solid;
+
+}
+
+.footer_logo_f {
+    width: 30px;
+    padding: 20px 10px 10px 30px;
+    border: 1px black solid;
+}
+
+
+
+.footer_ul {
+    display: flex;
+    font-size: 10px;
+    list-style: none;
+    color: white;
+    /* border: 1px black solid; */
+    justify-content: space-evenly;
+
+}
+
+.link_f {
+    /* border: 1px black solid; */
+    display: inline-block;
+    text-decoration: none;
+
+    color: white;
+    margin: 20px;
+    font-size: larger;
+    font-family: 'akira', Arial, sans-serif;
+    position: relative;
+
+}
+
+.link_f::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: .5s ease-in-out;
+
+}
+
+.link_f:hover::after {
+    width: 100%;
+}
+
+.footer_underlinks {
+
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+
+
+    /* border: 1px solid white; */
+
+}
+
+.home_under {
+    margin-left: -20px;
+    list-style: none;
+    color: white;
+    /* border: 1px solid white; */
+}
+
+.sportcars_under {
+    margin-left: -25px;
+    list-style: none;
+    /* border: 1px solid white; */
+
+}
+
+.collections_under {
+
+    list-style: none;
+    /* border: 1px solid white; */
+}
+
+.experiences_under {
+
+    list-style: none;
+    /* border: 1px solid white; */
+}
+
+.about_under {
+
+    list-style: none;
+    /* border: 1px solid white; */
+}
+
+.footer_links {
+    color: #fff;
+    font-family: coolvetica;
+}
+
+.li_under:hover {
+    transform: scale(1.2);
+    transition: .3s ease-in-out;
+    border-bottom: .5px solid white;
+
+}
+
+.divider_under_logo {
+    position: relative;
+    left: 50px;
+    height: 10px;
+    width: 1400px;
+    border-bottom: 1px solid grey;
+}
+
+.divider {
+    position: relative;
+    left: 160px;
+    height: 10px;
+    width: 1200px;
+    border-bottom: 1px solid grey;
+}
+
+.copyright_text {
+    position: relative;
+    left: 450px;
+    width: 600px;
+    padding-top: 30px;
+
+    color: grey;
+    text-align: center;
+    font-size: 10px;
+    font-family: creato;
+}

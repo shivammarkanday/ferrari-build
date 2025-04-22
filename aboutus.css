@@ -1,0 +1,404 @@
+/*============================NAVBAR CSS CODES STARTS==============================================*/
+*{
+    margin: 0%;
+    /* border: 1px white solid; */
+   
+}
+body {
+    font-family: 'akira', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+@font-face {
+    font-family: 'akira';
+    src: url('fonts/akiraexpanded.otf');
+}
+
+@font-face {
+    font-family: 'coolvetica';
+    src: url('fonts/coolvetica condensed rg.otf');
+}
+
+@font-face {
+    font-family: 'creato';
+    src: url('fonts/CreatoDisplay-Regular.otf');
+}
+@font-face {
+    font-family: 'nexa';
+    src: url('fonts/Nexa-Heavy.ttf');
+}
+.ferrari_logo {
+    width: 10px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    /* margin-right: -50px; */
+}
+
+.cover-vid {
+  
+    width: 100%;
+    left: 0;
+    /* height:100v; */
+    
+}
+.navbar {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    /* overflow: hidden; */
+}
+
+a {
+    text-decoration: none;
+}
+
+.ferrari_logo {
+    width: 100px;
+    margin-right: -50px;
+}
+
+
+.link {
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+    font-size: larger;
+    font-family: 'akira', Arial, sans-serif;
+    position: relative;
+}
+
+.link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: .5s ease-in-out;
+
+}
+
+.link:hover::after {
+    width: 100%;
+}
+
+.header_ul {
+    position: absolute;
+    left: 80px;
+    top: 30px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+.navbar{
+    position: sticky   ;
+}
+/*============================NAVBAR CSS CODES ENDS==============================================*/
+
+
+/*============================FOOTER CSS CODES STARTS==============================================*/
+
+.footer {
+
+
+    left: 0;
+    bottom: 0;
+    margin-left: -10px;
+    width: auto;
+    background-color: rgb(30, 29, 29);
+    border: 1px black solid;
+
+}
+
+.footer_logo_f {
+    width: 30px;
+    padding: 20px 10px 10px 30px;
+  
+}
+
+
+
+.footer_ul {
+    display: flex;
+    font-size: 10px;
+    list-style: none;
+    color: white;
+    margin-left: 10px;
+    /* border: 1px black solid; */
+    justify-content: space-evenly;
+
+}
+
+.link_f {
+    /* border: 1px black solid; */
+    display: inline-block;
+    text-decoration: none;
+
+    color: white;
+    margin: 20px;
+    font-size: larger;
+    font-family: 'akira', Arial, sans-serif;
+    position: relative;
+
+}
+
+.link_f::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: .5s ease-in-out;
+
+}
+
+.link_f:hover::after {
+    width: 100%;
+}
+
+.footer_underlinks {
+
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+
+
+    /* border: 1px solid white; */
+
+}
+
+.home_under {
+    margin-left: -20px;
+    list-style: none;
+    color: white;
+    /* border: 1px solid white; */
+}
+
+.sportcars_under {
+    margin-left: -25px;
+    list-style: none;
+    /* border: 1px solid white; */
+
+}
+
+.collections_under {
+
+    list-style: none;
+    /* border: 1px solid white; */
+}
+
+.experiences_under {
+
+    list-style: none;
+    /* border: 1px solid white; */
+}
+
+.about_under {
+
+    list-style: none;
+    /* border: 1px solid white; */
+}
+
+.footer_links {
+    color: #fff;
+    font-family: coolvetica;
+}
+
+.li_under:hover {
+    transform: scale(1.2);
+    transition: .3s ease-in-out;
+    border-bottom: .5px solid white;
+
+}
+
+.divider_under_logo {
+    position: relative;
+    left: 50px;
+    height: 10px;
+    width: 1400px;
+    border-bottom: 1px solid grey;
+}
+
+.divider {
+    position: relative;
+    left: 160px;
+    height: 10px;
+    width: 1200px;
+    border-bottom: 1px solid grey;
+}
+
+.copyright_text {
+    position: relative;
+    left: 450px;
+    width: 600px;
+    padding-top: 30px;
+
+    color: grey;
+    text-align: center;
+    font-size: 10px;
+    font-family: creato;
+}
+/*============================FOOTER CSS CODES ENDS==============================================*/
+
+
+/*============================join us cover pic CSS CODES Starts==============================================*/
+.join-us-img-container{
+    height: 368px;
+    overflow: hidden;
+
+}
+.join-us-img{
+    width: 100%;
+    position: relative;
+    top: -100%;
+
+   
+    transition: transform 2s;
+}
+.join-us-img:hover{
+    transform: scale(1.1);
+}
+.join{
+    position: relative;
+}
+.career-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+    font-family: akira;
+    text-align: center;
+}
+/*============================join us cover pic CSS CODES ENDS==============================================*/
+
+/*============================opportunities text CSS CODES STARTS==============================================*/
+
+.carrer-opportunities-text{
+    text-align: center;
+    padding: 10px;
+    
+    padding-top: 80px;
+    font-size: 20px;
+    font-family: akira;
+    color: black;
+    text-align: center;
+}   
+.carrer-opportunities-text-under{
+    text-align: center;
+    padding: 10px;
+   padding-top: 30px;
+   padding-left: 400px;
+   padding-right: 400px;
+   padding-bottom: 0px;
+    font-size: 20px;
+    font-family: coolvetica;
+    color: black;
+    text-align: center;
+}
+.carrer-opportunities-container{
+    margin-top: -5px;
+    background-color: white;
+    
+}
+/*============================opportunities text CSS CODES ENDS==============================================*/
+
+/*============================Submit button CSS CODES STARTS==============================================*/
+.submit-application{
+ 
+   border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: coolvetica;
+    background-color: white;
+    border: 1px solid black;
+    transition: 0.2s ease-in;
+
+}
+.submit-application:hover{
+
+    border-radius: 10px;
+     padding: 10px;
+     font-size: 20px;
+     color: white;
+     font-family: coolvetica;
+     background-color: black;
+     border: 1px solid white;
+ }
+.submit-button{
+
+    text-align: center;
+    padding: 50px;
+  
+    padding-bottom: 20px;
+}
+
+.latest_news{
+    background-color: white;
+    }
+.latest_news_text{
+       text-align: center;
+       padding: 50px;
+       font-size: 30px;
+       color: black;
+    
+    }
+.news{
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    
+    }
+    
+    .news_img{
+        width: 400px;
+            transition: transform .2s ease-in-out;
+    }
+    .news_text{
+        width: 300px;
+        padding-top: 30px;
+        font-family: akira;
+    
+    }
+    
+    
+    .news_img:hover {
+        transform: scale(1.1);
+        -ms-transform: scale(1.1); 
+        -webkit-transform: scale(1.1);
+      
+    }
+    .news_newpage{
+        list-style: none;
+        color: black   ;
+    }
+    
+    .news1{
+        color: #000;
+    }  
+    .news2{
+        color: #000;
+    }
+      
+    .news3{
+        color: #000;
+    }
+    .news_text_under{
+        width: 300px;
+        padding-top: 30px;
+        font-size: 20px;
+        font-family: coolvetica;
+    }

@@ -1,0 +1,251 @@
+/*============================NAVBAR CSS CODES STARTS==============================================*/
+*{
+    margin: 0%;
+    /* border: 1px white solid; */
+   
+}
+body {
+    font-family: 'akira', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+@font-face {
+    font-family: 'akira';
+    src: url('fonts/akiraexpanded.otf');
+}
+
+@font-face {
+    font-family: 'coolvetica';
+    src: url('fonts/coolvetica condensed rg.otf');
+}
+
+@font-face {
+    font-family: 'creato';
+    src: url('fonts/CreatoDisplay-Regular.otf');
+}
+@font-face {
+    font-family: 'nexa';
+    src: url('fonts/Nexa-Heavy.ttf');
+}
+.ferrari_logo {
+    width: 10px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    /* margin-right: -50px; */
+}
+
+.cover-vid {
+  
+    width: 100%;
+    left: 0;
+    /* height:100v; */
+    
+}
+.navbar {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    /* overflow: hidden; */
+}
+
+a {
+    text-decoration: none;
+}
+
+.ferrari_logo {
+    width: 100px;
+    margin-right: -50px;
+}
+
+
+.link {
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+    font-size: larger;
+    font-family: 'akira', Arial, sans-serif;
+    position: relative;
+}
+
+.link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: .5s ease-in-out;
+
+}
+
+.link:hover::after {
+    width: 100%;
+}
+
+.header_ul {
+    position: absolute;
+    left: 80px;
+    top: 30px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+.navbar{
+    position: sticky   ;
+}
+/*============================NAVBAR CSS CODES ENDS==============================================*/
+
+
+/*============================FOOTER CSS CODES STARTS==============================================*/
+
+.footer {
+
+
+    left: 0;
+    bottom: 0;
+    margin-left: -10px;
+    width: auto;
+    background-color: rgb(30, 29, 29);
+    border: 1px black solid;
+
+}
+
+.footer_logo_f {
+    width: 30px;
+    padding: 20px 10px 10px 30px;
+  
+}
+
+
+
+.footer_ul {
+    display: flex;
+    font-size: 10px;
+    list-style: none;
+    color: white;
+    /* border: 1px black solid; */
+    justify-content: space-evenly;
+
+}
+
+.link_f {
+    /* border: 1px black solid; */
+    display: inline-block;
+    text-decoration: none;
+
+    color: white;
+    margin: 20px;
+    font-size: larger;
+    font-family: 'akira', Arial, sans-serif;
+    position: relative;
+
+}
+
+.link_f::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: .5s ease-in-out;
+
+}
+
+.link_f:hover::after {
+    width: 100%;
+}
+
+.footer_underlinks {
+
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+
+
+    /* border: 1px solid white; */
+
+}
+
+.home_under {
+    margin-left: -20px;
+    list-style: none;
+    color: white;
+    /* border: 1px solid white; */
+}
+
+.sportcars_under {
+    margin-left: -25px;
+    list-style: none;
+    /* border: 1px solid white; */
+
+}
+
+.collections_under {
+
+    list-style: none;
+    /* border: 1px solid white; */
+}
+
+.experiences_under {
+
+    list-style: none;
+    /* border: 1px solid white; */
+}
+
+.about_under {
+
+    list-style: none;
+    /* border: 1px solid white; */
+}
+
+.footer_links {
+    color: #fff;
+    font-family: coolvetica;
+}
+
+.li_under:hover {
+    transform: scale(1.2);
+    transition: .3s ease-in-out;
+    border-bottom: .5px solid white;
+
+}
+
+.divider_under_logo {
+    position: relative;
+    left: 50px;
+    height: 10px;
+    width: 1400px;
+    border-bottom: 1px solid grey;
+}
+
+.divider {
+    position: relative;
+    left: 160px;
+    height: 10px;
+    width: 1200px;
+    border-bottom: 1px solid grey;
+}
+
+.copyright_text {
+    position: relative;
+    left: 450px;
+    width: 600px;
+    padding-top: 30px;
+
+    color: grey;
+    text-align: center;
+    font-size: 10px;
+    font-family: creato;
+}
+/*============================FOOTER CSS CODES ENDS==============================================*/
