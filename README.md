@@ -44,15 +44,6 @@ A sleek and multi-page Ferrari-themed website built in the 2nd semester as a fro
 2. Open any `.html` file (starting with `aboutus.html`) in your browser.
 3. Enjoy the Ferrari-themed experience!
 
----
-
-## 📷 Screenshots
-
-> Add screenshots in a `/screenshots` folder and link them here like:
-
-```md
-![About Us Page](screenshots/aboutus.png)
-```
 
 ---
 
